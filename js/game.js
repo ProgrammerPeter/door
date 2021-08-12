@@ -915,7 +915,7 @@ window.LEVEL_CONFIG = [
 			{x:150,y:170,radius:115},
 			{x:150,y:25,radius:35}
 		],
-		countdown: 125
+		countdown: 135
 	},
 	
 	// V
@@ -931,7 +931,7 @@ window.LEVEL_CONFIG = [
 			{x:180,y:175,radius:35},
 			{x:150,y:230,radius:35}
 		],
-		countdown: 87
+		countdown: 95
 	},
 	
 	// E
@@ -948,7 +948,7 @@ window.LEVEL_CONFIG = [
 			{x:195,y:200,radius:45},
 			{x:125,y:200,radius:45}
 		],
-		countdown: 150
+		countdown: 155
 	},
 
 ];
