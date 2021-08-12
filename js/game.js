@@ -304,7 +304,7 @@ function DoorKey(config,level){
 		var dx = self.x-level.player.x;
 		var dy = self.y-level.player.y;
 		var distance = Math.sqrt(dx*dx/4 + dy*dy);
-		if(distance<5){
+		if(distance<10){
 			level.keyCollected = true;
 
 			createjs.Sound.play("unlock");
@@ -362,7 +362,7 @@ function Door(config,level){
 			var dx = self.x-level.player.x;
 			var dy = self.y-level.player.y;
 			var distance = Math.sqrt(dx*dx/25 + dy*dy);
-			if(distance<6){
+			if(distance<10){
 				if(level.isIntro){
 					
 					document.getElementById("whole_container").style.top = "-100%";
