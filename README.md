@@ -1,21 +1,21 @@
-![](https://raw.githubusercontent.com/ncase/door/gh-pages/thumbnail.png)
+# 游戏《小王子与玫瑰》
 
-**Designed & developed by [Nicky Case](http://ncase.me/) in two-ish days.**
+## 原作者
+Amber, Lana, Rio, Sakura.
 
-Thank you to my playtesters: Amber, Lana, Rio, Sakura.
+## 作品概念
 
-All code and art dedicated to the public domain. 
-If you'd like to help me keep making free, open-source playable silliness,
-please check out [my Patreon!](http://patreon.com/ncase) Thank you. <3
+原作者通过方向键盘驱动小人获得钥匙到达小门，最后画出l❤️U的图案，是用来告白的小游戏。
 
----
+我们替换人物元素为我们最喜欢的《小王子》，因为王子说：“也许世界上有五千多和你一模一样的花，但只有你是我独一无二的玫瑰。”寓意着希望大家都能在这个七夕找到自己独一无二的人儿～
 
-**Asset Credits:**
+另外将行走路线改为“love”，王子找到玫瑰打开大门的过程也暗示着！想要打开love的大门，各位王子/公主需要带着你的玫瑰花行动起来哦～
 
-* Jazz Music: http://www.newgrounds.com/audio/listen/522444 (CC-BY-NC)
-* SFX Error: http://freesound.org/people/Autistic%20Lucario/sounds/142608/ (CC-BY)
-* SFX Step: http://freesound.org/people/Phil25/sounds/208103/ (CC ZERO)
-* SFX Ding: http://freesound.org/people/Aiwha/sounds/196106/ (CC-BY)
-* SFX Rewind: http://freesound.org/people/kasa90/sounds/174363/ (CC ZERO)
-* SFX Unlock: http://freesound.org/people/keweldog/sounds/181140/ (CC ZERO)
-* Social Media Icons: http://customizr.net/icons/
+## 玩法
+
+下载解压后，点击index.html文件即可开始。通过键盘操作小人，拿到玫瑰花走到大门即可通关。
+
+## 原作链接
+
+http://ncase.me/door/
+

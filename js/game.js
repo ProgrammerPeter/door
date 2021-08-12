@@ -330,7 +330,7 @@ function DoorKey(config,level){
 
 		ctx.save();
 		ctx.translate(self.x,self.y);
-		ctx.scale(0.7,0.7);
+		ctx.scale(0.4,0.4);
 
 		var scale = 1-Math.sin(self.hover)*0.5;
 		ctx.scale(1*scale,0.3*scale);
@@ -658,7 +658,7 @@ window.onload = function(){
 				rewindFrame++;
 				if(rewindFrame>=rewindLevel.frames.length){
 					CURRENT_LEVEL++;
-					if(CURRENT_LEVEL<3){
+					if(CURRENT_LEVEL<4){
 						startPlayback();
 					}else{
 
@@ -709,7 +709,7 @@ function next(){
 	}else{
 		level = null;
 		STAGE = 2;
-		CURRENT_LEVEL = 2;
+		CURRENT_LEVEL = 3;
 		startRewind();
 
 
@@ -820,7 +820,7 @@ yourLink.onclick = function(){
 function socialShare(event,type){
 
 	var link = yourLink.value;
-	var title = "it's a(door)able";
+	var title = "Le Petit Prince";
 	var url = "";
 	var width = 640;
 	var height = 480;
@@ -828,7 +828,7 @@ function socialShare(event,type){
 	switch(type){
 		case "facebook":
 			url += "https://www.facebook.com/sharer.php?u="+encodeURIComponent(link);
-			url += "&t="+encodeURIComponent("A lovely message for all my dear friends. This minigame only takes a minute to play, check it out! it's a(door)able --");
+			url += "&t="+encodeURIComponent("A lovely message for all my dear friends. This minigame only takes a minute to play, check it out! it's a (door) able --");
 			width = 626;
 			height = 436;
 			break;
@@ -846,13 +846,13 @@ function socialShare(event,type){
 			break;
 		case "tumblr":
 			url += "https://www.tumblr.com/share/link?url="+encodeURIComponent(link);
-			url += "&name="+encodeURIComponent("it's a(door)able");
+			url += "&name="+encodeURIComponent("it's a (door) able");
 			url += "&description="+encodeURIComponent("A lovely message for all my dear followers, in this 1-min minigame.");
 			width = 446;
 			height = 430;
 			break;
 		case "reddit":
-			window.open('http://www.reddit.com/submit?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(link)+'&amp;title='+encodeURIComponent("it's a(door)able: a one-minute minigame"), "reddit",'toolbar=no,width=700,height=550');
+			window.open('http://www.reddit.com/submit?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(link)+'&amp;title='+encodeURIComponent("it's a (door) able : a one-minute minigame"), "reddit",'toolbar=no,width=700,height=550');
 			return false;
 			break;
 		case "stumbleupon":
@@ -891,48 +891,65 @@ window.INTRO_LEVEL = {
 };
 
 window.LEVEL_CONFIG = [
-
-	// I
+	
+	// L
 	{
 		canvas:document.getElementById("canvas_1"),
-		player:{ x:150, y:175 },
-		door:{ x:150, y:75 },
-		key:{ x:150, y:275 },
+		player:{ x:150, y:75 },
+		door:{ x:275, y:295 },
+		key:{ x:150, y:285 },
 		circles: [
 			{x:0,y:150,radius:100},
 			{x:300,y:150,radius:100}
 		],
-		countdown:90
+		countdown:65
 	},
-
-	// HEART
+	
+	// O
 	{
 		canvas:document.getElementById("canvas_2"),
-		player:{ x:150, y:250 },
-		door:{ x:150, y:249 },
-		key:{ x:150, y:75 },
+		player:{ x:90, y:70 },
+		door:{ x:210, y:70 },
+		key:{ x:150, y:290 },
 		circles: [
-			{x:100,y:100,radius:50},
-			{x:200,y:100,radius:50},
-			{x:150,y:100,radius:10,invisible:true},
-			{x:0,y:300,radius:145},
-			{x:300,y:300,radius:145}
+			{x:150,y:170,radius:115},
+			{x:150,y:25,radius:35}
 		],
-		// SUPER HACK - for level 2, change timer so it's impossible to beat if you go BACKWARDS.
-		countdown: 200
+		countdown: 125
 	},
-
-	// U
+	
+	// V
 	{
 		canvas:document.getElementById("canvas_3"),
-		player:{ x:30, y:75 },
-		door:{ x:270, y:75 },
+		player:{ x:30, y:100 },
+		door:{ x:270, y:100 },
 		key:{ x:150, y:270 },
 		circles: [
-			{x:150,y:150,radius:115}
+			{x:100,y:101,radius:55},
+			{x:200,y:101,radius:55},
+			{x:120,y:175,radius:35},
+			{x:180,y:175,radius:35},
+			{x:150,y:230,radius:35}
 		],
-		countdown: 130
-	}
+		countdown: 87
+	},
+	
+	// E
+	{
+		canvas:document.getElementById("canvas_4"),
+		player:{ x:235, y:50 },
+		door:{ x:235, y:270 },
+		key:{ x:220, y:150 },
+		circles: [
+			{x:265,y:100,radius:45},
+			{x:195,y:100,radius:45},
+			{x:125,y:100,radius:45},
+			{x:265,y:200,radius:45},
+			{x:195,y:200,radius:45},
+			{x:125,y:200,radius:45}
+		],
+		countdown: 150
+	},
 
 ];
 
