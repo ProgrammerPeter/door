@@ -896,7 +896,7 @@ window.LEVEL_CONFIG = [
 	{
 		canvas:document.getElementById("canvas_1"),
 		player:{ x:150, y:75 },
-		door:{ x:275, y:295 },
+		door:{ x:285, y:295 },
 		key:{ x:150, y:285 },
 		circles: [
 			{x:0,y:150,radius:100},
@@ -908,14 +908,14 @@ window.LEVEL_CONFIG = [
 	// O
 	{
 		canvas:document.getElementById("canvas_2"),
-		player:{ x:90, y:70 },
-		door:{ x:210, y:70 },
+		player:{ x:95, y:65 },
+		door:{ x:205, y:65 },
 		key:{ x:150, y:290 },
 		circles: [
 			{x:150,y:170,radius:115},
-			{x:150,y:25,radius:35}
+			{x:150,y:25,radius:40}
 		],
-		countdown: 135
+		countdown: 140
 	},
 	
 	// V
@@ -941,14 +941,14 @@ window.LEVEL_CONFIG = [
 		door:{ x:235, y:270 },
 		key:{ x:220, y:150 },
 		circles: [
-			{x:265,y:100,radius:45},
-			{x:195,y:100,radius:45},
-			{x:125,y:100,radius:45},
-			{x:265,y:200,radius:45},
-			{x:195,y:200,radius:45},
-			{x:125,y:200,radius:45}
+			{x:270,y:100,radius:45},
+			{x:200,y:100,radius:45},
+			{x:130,y:100,radius:45},
+			{x:270,y:200,radius:45},
+			{x:200,y:200,radius:45},
+			{x:130,y:200,radius:45}
 		],
-		countdown: 155
+		countdown: 160
 	},
 
 ];
